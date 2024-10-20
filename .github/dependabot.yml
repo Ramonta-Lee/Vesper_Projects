@@ -1,10 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # Specify the package ecosystem
-    directory: "/" # Specify the directory where the package is located
+    directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly" # Specify the update interval
-    commitMessage:
-      prefix: "chore(deps):" # Specify the commit message prefix
-      include: "updated dependencies" # Specify the commit message content
+      interval: "weekly" # Set the update interval to weekly
 
