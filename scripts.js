@@ -1,4 +1,6 @@
-// scripts.js
+const exp = require("constants");
+
+// scr ipts.js
 function showCard(cardId) {
   console.log("Showing card:", cardId); // Debug message
   document.querySelectorAll(".overlay").forEach((overlay) => {
