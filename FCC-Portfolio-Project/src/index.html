@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Developer Portfolio" />
+    <meta name="author" content="Ramonta Lee" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="container">
+        <div class="card" onclick="showCard('contact-card')">
+          <svg
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+            class="noiseBg"
+          >
+            <filter id="noiseFilterBg">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.85"
+                numOctaves="6"
+                stitchTiles="stitch"
+              />
+            </filter>
+            <rect
+              width="100%"
+              height="100%"
+              preserveAspectRatio="xMidYMid meet"
+              filter="url(#noiseFilterBg)"
+            />
+          </svg>
+          <div class="content">
+            <h2>Contact</h2>
+            <p>Contact section content...</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr />
+    <div class="hidden-section">
+      <div class="overlay hidden-card" id="contact-card">
+        <div class="card-visible">
+          <span class="close-btn" onclick="hideCard('contact-card')">X</span>
+          <h2>Contact Me</h2>
+          <p>Here's how you can get in touch...</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <svg
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+      class="noiseBg"
+    >
+      <filter id="noiseFilterBg">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.85"
+          stitchTiles="stitch"
+          numOctaves="6"
+        ></feTurbulence>
+      </filter>
+      <rect
+        width="100%"
+        height="100%"
+        preserveAspectRatio="xMidYMid meet"
+        filter="url(#noiseFilterBg)"
+      ></rect>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 18 -8"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive"></div>
+    </div>
+    <hr />
+    <footer>
+      <h3>Contact Me :)</h3>
+      <p>&copy; 2024 Ramonta Lee. All rights reserved.</p>
+    </footer>
+    <hr />
+    <a href="#beginning-content" id="back-to-top">↑ Back to Top</a>
+    <script src="scripts.js"></script>
+  </body>
+</html>
