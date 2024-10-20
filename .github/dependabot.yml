@@ -7,4 +7,4 @@ updates:
     commitMessage:
       prefix: "chore(deps):" # Specify the commit message prefix
       include: "updated dependencies" # Specify the commit message content
-      
+
